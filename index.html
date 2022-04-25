@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ul2menu</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+<ul id="exemple1">
+    <li>
+        item1
+        <ul>
+            <li>item1.1</li>
+            <li>item1.2</li>
+            <li>item1.3</li>
+            <li>
+                item1.4
+                <ul>
+                    <li>item1.4.1</li>
+                    <li>item1.4.2</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>menu2</li>
+    <li>
+        menu3
+        <ul>
+            <li>menu3.1</li>
+            <li>menu3.2</li>
+        </ul>
+    </li>
+</ul>
+
+<ul id="exemple2" class="custom">
+    <li>
+        item1
+        <ul>
+            <li>item1.1</li>
+            <li>item1.2</li>
+            <li>item1.3</li>
+            <li>
+                item1.4
+                <ul>
+                    <li>item1.4.1</li>
+                    <li>item1.4.2</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>menu2</li>
+    <li>
+        menu3
+        <ul>
+            <li>menu3.1</li>
+            <li>menu3.2</li>
+        </ul>
+    </li>
+</ul>
+<script src="ul2menu.js"></script>
+<script>
+    let menu1 = new ul2menu(document.getElementById('exemple1'));
+    let menu2 = new ul2menu(document.getElementById('exemple2'));
+</script>
+</body>
+</html>
